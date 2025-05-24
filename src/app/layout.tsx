@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Image from "next/image";
+// import Layout from "./displayer/layout";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +28,41 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="h-[2.5vw] w-full">
+          <nav className="flex justify-between items-center p-4">
+            <Image src="/logo.svg" alt="Vercel Logo" width={200} height={200} />
+            <button className="text-white h-[40px] w-[92px] rounded-lg bg-green-500">
+              Buy Now
+            </button>
+          </nav>
+        </div>
+        <div className="h-[54px] w-full flex justify-center mt-6">
+          <nav className="flex flex-row gap-6 ">
+            <Image
+              src={"/logo1.svg"}
+              alt="Vercel Logo"
+              width={150}
+              height={150}
+            />
+            <div className="flex mt-3 gap-10 ml-12">
+              <button className="text-black text-lg ">Home</button>
+              <button className="text-black text-lg">Find A Job</button>
+              <button className="text-black text-lg">Recruitures</button>
+              <button className="text-black text-lg">Candidate</button>
+              <button className="text-black text-lg">Pages</button>
+              <button className="text-black text-lg">Blog</button>
+              <button className="text-black text-lg">Contact</button>
+            </div>
+            <div className="flex mt-1 gap-4 ml-11">
+              <button className="text-black text-lg h-[48px] w-[98px] rounded-lg bg-green-500 transition duration-1000 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                Login
+              </button>
+              <button className="text-black text-lg h-[48px] w-[98px] rounded-lg bg-[#3C65F5] transition duration-1000 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                Sign Up
+              </button>
+            </div>
+          </nav>
+        </div>
         {children}
       </body>
     </html>

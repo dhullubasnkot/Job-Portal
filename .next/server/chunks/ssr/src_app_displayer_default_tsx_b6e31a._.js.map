@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/dell/Desktop/Intern/jobportal/src/app/displayer/default.tsx"],"sourcesContent":["\r\nexport default function NullPage(){\r\n    return(\r\n      <div></div>\r\n    )\r\n  }"],"names":[],"mappings":";;;;;AACe,SAAS;IACpB,qBACE,8OAAC;;;;;AAEL"}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
