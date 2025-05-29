@@ -34,7 +34,7 @@ export default function Layout({ children, jobCategoryOfTheDay }: child) {
             their search for work, making over 140,000 applications every single
             day.
           </p>
-
+{/* updated */}
           <div className="relative mt-2 w-[420px]">
             <input
               type="text"
